@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N7PM7LFR');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Luis Luna's Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/modal.css">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7PM7LFR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo" style="font-style: italic;">
+                <a href="#">Luis</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO/</a>
+                        <a href="#inicio" class="ENFonts">START</a>
+                    </li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI/</a>
+                        <a href="index-en.html#sobremi" class="ENFonts">ABOUT ME</a>
+                    </li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES/</a>
+                        <a href="index-en.html#skills" class="ENFonts">SKILLS</a>
+                    </li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM/</a>
+                        <a href="#curriculum" class="ENFonts">RESUME</a>
+                    </li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio/</a>
+                        <a href="index-en.html#skills" class="ENFonts">PORTFOLIO</a>
+                    </li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO/</a>
+                        <a href="index-en.html#skills" class="ENFonts">CONTACT</a>
+                    </li>
+                    <li><a href="index.html"><img src="/img/icon/spain_fl.png" alt="" style="width: 30px;"></a>
+                        <a href="index-en.html" class="ENFonts"><img src="/img/icon/uk_fl.png" style="width: 30px;"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/img/Luis_Luna_foto.jpg" alt="" style="margin-top: 50px;">
+            </div>
+            <h1>Luis Luna</h1>
+            <h2 class="ENFonts">Fullstack Developer || Mechanical Eng.</h2>
+            <div class="redes">
+                <a href="https://slack.com/team/U0383P2JYF7"><i class="fa-brands fa-slack"></i></a>
+                <a href="https://github.com/RDLuisL" target="blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?text=Visita%20mi%20sitio%20web:%20https://luislunatech.com"
+                    target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i></a>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Profile</h2>
+            <p><span>Hello, i am Luis Luna.</span> Full Stack Developer with experience in developing responsive and
+                scalable web applications. Expertise in creating
+                complex user interfaces, frontend performance optimization, and intuitive user experience (UX) design,
+                as well as
+                process automation. Proficient in technologies such as React, Node.js, Flask, and SQLAlchemy, with
+                skills in API
+                integration, secure authentication, and performance optimization. A proactive, collaborative, and
+                continuously
+                learning approach to delivering innovative solutions in dynamic environments.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3 class="ENFonts">Personal Info</h3>
+                    <ul>
+                        <li>
+                            <strong class="ENFonts">Phone Number</strong>
+                            <a href="tel:+56944887031">+56 944887031</a>
+                        </li>
+                        <li>
+                            <strong>E-mail</strong>
+                            <a style="text-decoration: none ; color: lightgray;"
+                                href="contact@luislunatech.com">contact@luislunatech.com</a>
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            <a style="text-decoration: none ; color: lightgray;"
+                                href="http://www.luislunatech.com">www.luislunatech.com</a>
+                        </li>
+                        <li>
+                            <strong class="ENFonts">Address</strong>
+                            Santiago de Chile, Chile
+                        </li>
+                        <li>
+                            <strong class="ENFonts">Availability</strong>
+                            <span>To be agreed</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <!-- <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- Botones para bajar CV -->
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <button onclick="downloadCV('/CV/CV-Luis-Luna-EN.pdf')">
+                    Download CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technicals Skills</h3>
+                    <h4 style="margin: -20px 0 20px 20px;">Most Relevant</h5>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>89%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>TypeScript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>81%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Node.js</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>55%</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <h4 style="margin: -20px 0 20px 20px;">Most Relevant</h5>
+                        <div class="skill">
+                            <span>Adaptability</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Team Work</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Solve Resolution</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedication</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Positive and Proactive Attitude</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Résumé</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <!-- Educación -->
+                    <h3>Education</h3>
+                    <div class="item izq">
+                        <h4><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811"
+                                text-decoration="none" color="white">FullStack Developer
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                    <path d="M11 13l9 -9" />
+                                    <path d="M15 4h5v5" />
+                                </svg>
+                            </a>
+                        </h4>
+                        <span class="casa">4Geeks Academy</span>
+                        <span class="fecha">January 2023 – June 2023 Santiago, Chile</span>
+                        <p><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811"
+                                target="_blank">Click here to see the certificade
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                    <path d="M11 13l9 -9" />
+                                    <path d="M15 4h5v5" />
+                                </svg>
+                            </a></p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bussines Manager and Administration Diplomade</h4>
+                        <span class="casa">SEDA/The Institute of Commercial Management</span>
+                        <span class="fecha">January 2016 - September 2016<br>| Dublín, Ireland</span>
+                        <a href="https://www.icm.education/" target="_blank">
+                            </svg></span>
+                            <p><a href="https://drive.google.com/file/d/1ERxrS_WPQ2UJNSIANbL1i56pT7Z6bk4_/view?usp=drive_link"
+                                    target="_blank">Click here to see the certificade
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                        <path d="M11 13l9 -9" />
+                                        <path d="M15 4h5v5" />
+                                    </svg>
+                                </a></p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Mechanical Engineering</h4>
+                        <span class="casa">Universidad Central de Venezuela</span>
+                        <span class="fecha">Caracas, Venezuela</span>
+                        <a href="https://drive.google.com/file/d/1_j7f-LxCohiPJ71kYbswEQHdIUipSjdh/view?usp=drive_link">
+                            Click here to see the certificade
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Projects</h3>
+                    <div class="item izq">
+                        <h4>Brain Manager 🧠🎧⏳</h4>
+                        <span class="casa">4Geeks Academy Final Project</span>
+                        <span class="fecha">October – November 2023<br> |
+                            Santiago, Chile</span>
+                        <ul>
+                            Fullstack web application development for time management with Pomodoro Timer and binaural
+                            beats music.
+                            <li>
+                                UI prototyped in Illustrator with key views.
+                            </li>
+                            <li>
+                                Responsive design with HTML5, CSS, and Bootstrap.
+                            </li>
+                            <li>
+                                Pomodoro Timer in JavaScript with binaural audio.
+                            </li>
+                            <li>
+                                Flask + JWT for secure authentication.
+                            </li>
+                            <li>
+                                SQLAlchemy database with metrics in an interactive dashboard.
+                            </li>
+                        </ul>
+
+                        <a href="https://github.com/JonPobDum/4Geeks_final_front" target="_blank">Click Here to see the
+                            Frontend
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
+                        </a>
+                        <br>
+                        <a href="../Trabajo_final_4Geeks_Mock .jpg" target="_blank">Click Here to see the Mock
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <!-- Experiencia Profesional -->
+                    <h3>Professional Experience</h3>
+
+                    <!-- No-Country Start -->
+                    <div class="item der">
+                        <h4>Frontend Developer</h4>
+                        <span class="casa">No-Country</span>
+                        <span class="fecha">November 2024 – December 2024 <br>
+                            Santiago, Chile</span>
+                        <ul>
+                            Padel Time - Padel Court Reservation System 🏓
+                            <li>
+                                React + MUI for a dynamic and intuitive UI.
+                            </li>
+                            <li>
+                                ScrollDown Library for smooth navigation.
+                            </li>
+                            <li>
+                                Dashboard with MUI for real-time monitoring.
+                            </li>
+                            <li>
+                                Structured JSX for better performance and maintainability.
+                            </li>
+                        </ul>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- No-Country End -->
+
+                    <!-- Limpiafosas Start-->
+                    <div class="item der">
+                        <h4>FullStack Developer</h4>
+                        <span class="casa">Limpiafosas Express ♻️</span>
+                        <span class="fecha">October 2024 – November 2024<br>
+                            | Santiago, Chile</span>
+                        <ul>
+                            Web Page
+                            <li>
+                                React + SASS for an attractive and modular UI.
+                            </li>
+                            <li>
+                                Contact system via email with PHP.
+                            </li>
+                            <li>
+                                Image optimization with CDN and hosting.
+                            </li>
+                            <li>
+                                QA testing to validate key views.
+                            </li>
+                        </ul>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- Limpiafosas End-->
+
+                    <!-- ELevadores Diamante Start-->
+                    <div class="item der">
+                        <h4>FullStack Developer</h4>
+                        <span class="casa">Elevadores Diamante 🏗️</span>
+                        <span class="fecha">August 2024 – September 2024<br>
+                            Santiago, Chile</span>
+                        <ul>
+                            Web Page
+                            <li>
+                                React + SASS for an attractive and modular UI.
+                            </li>
+                            <li>
+                                Contact system via email with PHP.
+                            </li>
+                            <li>
+                                Image optimization with CDN and hosting.
+                            </li>
+                            <li>
+                                QA testing to validate key views.
+                            </li>
+                        </ul>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- ELevadores Diamante End-->
+
+                    <!-- AutoCarehub Start-->
+                    <div class="item der">
+                        <h4>FullStack Developer</h4>
+                        <span class="casa">AutoCarehub 🚗</span>
+                        <span class="fecha">October 2024 – November 2024<br>
+                            Santiago, Chile</span>
+                        <ul>
+                            Web Page
+                            <li>
+                                Bootstrap + SASS for a responsive and intuitive UI.
+                            </li>
+                            <li>
+                                Integration with WhatsApp using jQuery and PHP.
+                            </li>
+                            <li>
+                                Automation of email messages with PHP.
+                            </li>
+                            <li>
+                                Image optimization with CDN and hosting.
+                            </li>
+                            <li>
+                                Efficient state management with Redux.
+                            </li>
+                        </ul>
+
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- AutoCarehub End-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <!-- 1st Card Auto Carehub - Fallout-->
+                <div class="proyecto" id="autocare">
+                    <img src="/img/thumbnail/AutoCarehub_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://www.autocarehub.cl" target="_blank"
+                                style="text-decoration: none; color: white;">Click</h3>
+                        <p>Here</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 2st Card - Lifoex-->
+                <div class="proyecto" id="lifoex">
+                    <img src="/img/thumbnail/lifoex_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://lifoex.cl" target="_blank"
+                                style="text-decoration: none; color: white;">Click</h3>
+                        <p>Here</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 3st Card - Elevadores Diamante -->
+                <div class="proyecto" id="lifoex">
+                    <img src="/img/thumbnail/diamante_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://elev-diamante-lva2.vercel.app/" target="_blank"
+                                style="text-decoration: none; color: white;">Click</h3>
+                        <p>Here</p>
+                        <p>Pre-Production</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 4rd Card - Auto Square -->
+                <div class="proyecto" id="autosquare">
+                    <img src="/img/thumbnail/Autosquare_home.webp" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://www.figma.com/proto/y7To3JulcYF0EDgPKwecJx/AutoSquare.Store?node-id=452-7274&t=vLIPlxhL0l2xYxuM-1"
+                                target="_blank" style="text-decoration: none; color: white;">Click</h3>
+                        <p>Here</p>
+                        <p>UX/UI Figma Mockup</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 5th Card - NFC Register Project -->
+                <div class="proyecto" id="nfc">
+                    <img src="/img/thumbnail/Proyecto_NFC.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3 style="margin-top: 20px;"><a href="#" target="_blank"
+                                style="text-decoration: none; color: white;">
+                                Project Proposal</h3>
+                        <h3>Concept</h3>
+                        <p style="margin-bottom: 20px;">In Progress - Fullstack</p>
+                        <svg fill="#1CB698FF" viewBox="0 0 40 4" xmlns="http://www.w3.org/2000/svg">
+                            <style>
+                                .react {
+                                    animation: moving 2s ease-in-out infinite;
+
+                                }
+
+                                @keyframes moving {
+                                    0% {
+                                        width: 0%;
+                                    }
+
+                                    50% {
+                                        width: 100%;
+                                        transform: translate(0%, 0);
+                                    }
+
+                                    100% {
+                                        width: 0;
+                                        right: 0;
+                                        transform: translate(100%, 0);
+                                    }
+                                }
+                            </style>
+                            <rect class="react" width="10" height="1" fill="currentColor" />
+                        </svg></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 6th Card - Brain Manager -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/final_project_brain _manager.jpg" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="#" target="_blank" style="text-decoration: none; color: white;">
+                                Final Proyect -4Geeks</h3>
+                        <p>Brain Manager</p>
+                        <p>Click Here</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 7th Card - Hotel Guide -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/hotel_guide_thumbnail.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3 style="margin-top: 20px;"><a href="#" target="_blank"
+                                style="text-decoration: none; color: white;">
+                                Project Proposal</h3>
+                        <h3>Concept</h3>
+                        <p style="margin-bottom: 20px;">In Progress - Fullstack</p>
+                        <svg fill="#1CB698FF" viewBox="0 0 40 4" xmlns="http://www.w3.org/2000/svg">
+                            <style>
+                                .react {
+                                    animation: moving 2s ease-in-out infinite;
+
+                                }
+
+                                @keyframes moving {
+                                    0% {
+                                        width: 0%;
+                                    }
+
+                                    50% {
+                                        width: 100%;
+                                        transform: translate(0%, 0);
+                                    }
+
+                                    100% {
+                                        width: 0;
+                                        right: 0;
+                                        transform: translate(100%, 0);
+                                    }
+                                }
+                            </style>
+                            <rect class="react" width="10" height="1" fill="currentColor" />
+                        </svg></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 8st Card - Parrillados Express -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/parrillada_express_QR.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://parrilladas-chi.vercel.app/" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p>
+                        <p>Pre - Producción</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 9nd Card Music Player-->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/music_player.png" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
+                    <div class="overlay">
+                        <h3><a href="https://music-player-xi-green.vercel.app/" target="_blank">Personal Project
+                        </h3>
+                        <p>Cliquea</p>
+                        <p>Aquí</p>
+                        </a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 10nd Card Elevadores Diamante The Game -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/the_game_elev-diam_thumbnail.png" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
+                    <div class="overlay">
+                        <h3><a href="https://elev-diamant-the-game.vercel.app/" target="_blank">Video Game Project
+                        </h3>
+                        <p>Click</p>
+                        <p>Here</p>
+                        </a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 10nd Card E-Commerce Runners-->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/e-commerce_runners-thumbnails.JPG" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
+                    <div class="overlay">
+                        <h3><a href="https://e-commerse-runners.vercel.app/" target="_blank">Proyecto Personal
+                        </h3>
+                        <p>Cliquea</p>
+                        <p>Aquí</p>
+                        </a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 11st Card - Netflix -->
+                <div class="proyecto">
+                    <img src="/img/netflix_fallout.PNG" style="border-radius: 10px;" alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://github.com/RDLuisL/Netflix_trailer.git" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 12rd Card Keyboard-->
+                <div class="proyecto">
+                    <img src="/img/virtual_keyboard.PNG" style="border-radius: 10px;" alt="virtual_keyboard_repository">
+                    <div class="overlay">
+                        <h3><a href="https://3000-rdluisl-virtualkeyword-2wvxsuv54dp.ws-us110.gitpod.io/"
+                                target="_blank">Click</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 13rd Card Polygonal Earth-->
+                <div class="proyecto">
+                    <img src="/img/Polygonal_Earth.PNG" style="border-radius: 10px;" alt="Polygonal_Earth">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-polygonalearth-82csqr6o5ux.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 14ft Card Fortune Wheel-->
+                <div class="proyecto">
+                    <img src="/img/Fortune_wheel.PNG" style="border-radius: 10px;" alt="fortune_wheel">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-fortunespinwhee-jg0xtm6t81l.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 15th Progress Circular Bar-->
+                <div class="proyecto">
+                    <img src="/img/Progress_circular_bar.PNG" style="border-radius: 10px;" alt="progress_circular_bar">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-circularbarprog-hj6wt0rs6tj.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 16th Progress Circular Bar-->
+                <div class="proyecto">
+                    <img src="/img/SW_cards.PNG" style="border-radius: 10px;" style="border-radius: 10px;"
+                        alt="star_wars_cards">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-animatedcardscs-wgjbk5uc59u.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!--17th Ball Bouncing on rope-->
+                <div class="proyecto">
+                    <img src="/img/ball_bouncing_rope.PNG" style="border-radius: 10px;" alt="elastic_efects">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-elasticeffects-acne8m1yp4d.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div>
+
+                <!--18th Ball Bouncing on rope-->
+                <div class="proyecto">
+                    <img src="/img/product-gallery.PNG" style="border-radius: 10px;" alt="bouncing_ball_on_rope">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-productgalery-wrbrgsverc2.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACT</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Phone number">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Topic">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button>
+                        Summit <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col margin-box-info-contact">
+                    <img src="/img/img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Santiago de Chile, RM
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                +56 944887031
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: contact@luislunatech.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h3>Version 1.0</h3>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://slack.com/team/U0383P2JYF7"><i class="fa-brands fa-slack"></i></a>
+            <a href="https://github.com/RDLuisL" target="blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?text=Visita%20mi%20sitio%20web:%20https://luislunatech.com"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+        </div>by:
+        <a href="http://luislunatech.com"><img src="/img/lluna_sign_white.png" class="" style="width: 150px;">
+            </img></a>
+    </footer>
+
+    <script src="/js/download.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

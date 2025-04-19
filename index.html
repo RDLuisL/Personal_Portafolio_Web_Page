@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N7PM7LFR');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     <title>Luis Luna's Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/modal.css">
 </head>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7PM7LFR" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
         <header>
@@ -18,19 +41,26 @@
             <nav id="nav">
                 <ul>
                     <li><a href="#inicio" onclick="seleccionar()">INICIO/</a>
-                      <a class="ENFonts">START</a>
+                        <a href="#inicio" class="ENFonts">START</a>
                     </li>
                     <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI/</a>
-                      <a class="ENFonts">ABOUT ME</a>
+                        <a href="index-en.html#sobremi" class="ENFonts">ABOUT ME</a>
                     </li>
                     <li><a href="#skills" onclick="seleccionar()">HABILIDADES/</a>
-                      <a class="ENFonts">SKILLS</a></li>
+                        <a href="index-en.html#skills" class="ENFonts">SKILLS</a>
+                    </li>
                     <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM/</a>
-                      <a class="ENFonts">RESUME</a></li>
+                        <a href="#curriculum" class="ENFonts">RESUME</a>
+                    </li>
                     <li><a href="#portfolio" onclick="seleccionar()">Portafolio/</a>
-                      <a class="ENFonts">Portfolio</a></li>
+                        <a href="index-en.html#skills" class="ENFonts">PORTFOLIO</a>
+                    </li>
                     <li><a href="#contacto" onclick="seleccionar()">CONTACTO/</a>
-                      <a class="ENFonts">CONTACT</a></li>
+                        <a href="index-en.html#skills" class="ENFonts">CONTACT</a>
+                    </li>
+                    <li><a href="index.html"><img src="/img/icon/spain_fl.png" alt="" style="width: 30px;"></a>
+                        <a href="index-en.html" class="ENFonts"><img src="/img/icon/uk_fl.png" style="width: 30px;"></a>
+                    </li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -39,20 +69,52 @@
         </header>
     </div>
 
+    <!-- Modal de Bienvenida Start -->
+    <dialog id="modal">
+        <form method="dialog">
+            <button class="close-btn">✖</button>
+        </form>
+        <h2 class="modal-title" style="margin-bottom: 20px;">¡Bienvenido a mi portafolio!</h2>
+        <h2 class="modal-title" style="margin-bottom: 20px;  color: #1cb698">Welcome to my portfolio</h2>
+        <p class="modal-text" style="margin-bottom: 20px;">Esta es la primera versión de mi sitio. Actualmente, estoy
+            desarrollando una
+            nueva versión con las
+            tecnologías más recientes que estoy aprendiendo y perfeccionando.
+            <br>
+            Aprecio tu visita y espero que disfrutes el recorrido.
+        </p>
+        <p class="modal-text" style="margin-bottom: 20px;  color: #1cb698">This is the first version of my site. I am
+            currently working on
+            a new version
+            using the latest technologies I
+            am learning and refining.
+            <br>
+            I appreciate your visit and hope you enjoy exploring my work.
+        </p>
+    </dialog>
+
+    <script>
+        const modal = document.getElementById('modal');
+        modal.showModal(); // Abre el modal automáticamente al cargar la página
+    </script>
+    <!-- Modal de Bienvenida End -->
+
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="../Foto_Linkedin.jpg" alt="">
+                <img src="/img/Luis_Luna_foto.jpg" alt="" style="margin-top: 50px;">
             </div>
             <h1>Luis Luna</h1>
             <h2>Desarrollador Fullstack || Ing. Mecánico</h2>
-            <h2 class="ENFonts">Fullstack Developer || Mechanical Eng.</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-slack"></i></a>
+                <a href="https://slack.com/team/U0383P2JYF7"><i class="fa-brands fa-slack"></i></a>
                 <a href="https://github.com/RDLuisL" target="blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-solid fa-rss"></i></a>
+                <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://api.whatsapp.com/send?text=Visita%20mi%20sitio%20web:%20https://luislunatech.com"
+                    target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
@@ -61,39 +123,42 @@
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
             <h2>Sobre Mí</h2>
-            <p><span>Hola, soy Luis Luna.</span> Desarrollador Fullstack apasionado e ingeniero civil de profesion . Comunicativo, creativo y colaborador, busco la oportunidad para demostrar mi actual dominio y mi constante disposición para aprender y crecer en el campo tecnológico.</p>
+            <p><span>Hola, soy Luis Luna.</span> Desarrollador Full Stack con experiencia en el desarrollo de
+                aplicaciones web responsivas y escalables. Creación de
+                interfaces de usuario complejas, optimización del rendimiento Frontend y la experiencia de usuario (UX)
+                intuitivas,
+                funcionales y automatización de procesos. Dominio de tecnologías como React, Node.js, Flask y
+                SQLAlchemy, con
+                habilidades en integración de API, autenticación segura y optimización de rendimiento. Enfoque
+                proactivo,
+                colaborativo y en constante aprendizaje para aportar soluciones innovadoras en entornos dinámicos.</p>
 
             <div class="fila">
                 <!-- datos personales -->
                 <div class="col">
                     <h3>Datos Personales</h3>
-                    <h3 class="ENFonts">Personal Info</h3>
                     <ul>
                         <li>
                             <strong>Teléfono</strong>
-                            <br>
-                            <strong class="ENFonts">Phone Number</strong>
-                            +56 9 
+                            <a href="tel:+56944887031">+56 9 4488 7031</a>
                         </li>
                         <li>
-                            <strong>Email</strong>
-                            <a style="text-decoration: none ; color: lightgray;"  href="dev.eng.luisluna@gmail.com">d@gmail.com</a>
+                            <strong>Correo Electrónico</strong>
+                            <a style="text-decoration: none ; color: lightgray;"
+                                href="contact@luislunatech.com">contact@luislunatech.com</a>
                         </li>
                         <li>
                             <strong>Website</strong>
-                            www.example.com
+                            <a style="text-decoration: none ; color: lightgray;"
+                                href="http://www.luislunatech.com">www.luislunatech.com</a>
                         </li>
                         <li>
                             <strong>Dirección</strong>
-                            <br>
-                            <strong class="ENFonts">Adress</strong>
                             Santiago de Chile, Chile
                         </li>
                         <li>
                             <strong>Disponibilidad</strong>
-                            <br>
-                            <strong class="ENFonts">Availability</strong>
-                            <span>IMMEDIATELY</span>
+                            <span>A Convenir</span>
                         </li>
                     </ul>
                 </div>
@@ -138,105 +203,112 @@
                     </div>
                 </div> -->
             </div>
-            <button>
-                Descargar CV <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </button>
+
+            <!-- Botones para bajar CV -->
+            <div style="display: flex; gap: 15px; justify-content: center;">
+                <button onclick="downloadCV('/CV/CV-Luis-Luna-ES.pdf')">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+
         </div>
     </section>
 
     <!-- SECCION SKILLS -->
     <section class="skills" id="skills">
         <div class="contenido-seccion">
-            <h2>Skills</h2>
+            <h2>Habilidades</h2>
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Technical Skills</h3>
-                    <div class="skill">
-                        <span>Javascript</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>75%</span>
+                    <h3>Habilidades Técnicas</h3>
+                    <h4 style="margin: -20px 0 20px 20px;">Más Relevantes</h5>
+                        <div class="skill">
+                            <span>React</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>HTML & CSS</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>89%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Photoshop</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
+                        <div class="skill">
+                            <span>TypeScript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Wordpress</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>81%</span>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>81%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Drupa</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
+                        <div class="skill">
+                            <span>Node.js</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>55%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-                <!-- Professional Skills -->
+                <!-- Soft Skills -->
                 <div class="col">
-                    <h3>Professional Skills</h3>
-                    <div class="skill">
-                        <span>Comunicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
+                    <h3>Habilidades Blandas</h3>
+                    <h4 style="margin: -20px 0 20px 20px;">Más Relevantes</h5>
+                        <div class="skill">
+                            <span>Adaptabilidad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Trabajo en Equipo</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>70%</span>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Creatividad</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>99%</span>
+                        <div class="skill">
+                            <span>Resolución de Problemas</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>85%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Dedicación</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>99%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <span>Proyect Management</span>
-                        <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
+                        <div class="skill">
+                            <span>Actitud Positiva y Proactiva</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -248,61 +320,129 @@
             <h2>Curriculum</h2>
             <div class="fila">
                 <div class="col izquierda">
+
+                    <!-- Educación -->
                     <h3>Educación</h3>
                     <div class="item izq">
-                        <h4><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811" text-decoration="none" color="white">Full Stack Developer 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                                <path d="M11 13l9 -9" />
-                                <path d="M15 4h5v5" />
-                              </svg>
+                        <h4><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811"
+                                text-decoration="none" color="white">Desarrollador FullStack
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                    <path d="M11 13l9 -9" />
+                                    <path d="M15 4h5v5" />
+                                </svg>
                             </a>
                         </h4>
                         <span class="casa">4Geeks Academy</span>
-                        <span class="fecha">January 2023 – June 2023 Santiago, Chile</span>
-                        <p><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811" target="_blank">Click here to see the certification 
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                                <path d="M11 13l9 -9" />
-                                <path d="M15 4h5v5" />
-                              </svg>
-                        </a></p>
+                        <span class="fecha">Enero 2023 – Junio 2023 Santiago, Chile</span>
+                        <p><a href="https://certificate.4geeks.com/f801b3a177f568f264adef201beb25847045a811"
+                                target="_blank">Click aquí para ver certificado
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                    <path d="M11 13l9 -9" />
+                                    <path d="M15 4h5v5" />
+                                </svg>
+                            </a></p>
                         <div class="conectori">
                             <div class="circuloi"></div>
                         </div>
                     </div>
                     <div class="item izq">
-                        <h4>Business Managment and Administration</h4>
-                        <span class="casa">SEDA/Institute of Commercial Management</span>
-                        <span class="fecha">January 2016 - September 2017<br>| Dublin, Ireland</span>
-                        <p>Conocimientos y prácticas esenciales para liderar y gestionar empresas de manera efectiva en un entorno empresarial dinámico y competitivo.<br> Fundamentos de Administración Empresarial. Gestión de Recursos Humanos. Finanzas Corporativas y Contabilidad (Indicadores).Marketing y Estrategia Comercial.<br><a href="https://www.icm.education/" target="_blank">
-                                </svg></span>
-                                <p><a href="https://www.icm.education/" target="_blank">Click here
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <h4>Diplomado de Gerencia y Administración de Empresa</h4>
+                        <span class="casa">SEDA/The Institute of Commercial Management</span>
+                        <span class="fecha">Enero 2016 - Septiembre 2016<br>| Dublín, Irlanda</span>
+                        <a href="https://www.icm.education/" target="_blank">
+                            </svg></span>
+                            <p><a href="https://drive.google.com/file/d/1ERxrS_WPQ2UJNSIANbL1i56pT7Z6bk4_/view?usp=drive_link"
+                                    target="_blank">Click aquí para ver certificado
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="icon icon-tabler icon-tabler-external-link" width="16" height="16"
+                                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                         <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
                                         <path d="M11 13l9 -9" />
                                         <path d="M15 4h5v5" />
                                     </svg>
-                        </a></p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
+                                </a></p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
                     </div>
                     <div class="item izq">
                         <h4>Ingeniería Civil Mecánica</h4>
                         <span class="casa">Universidad Central de Venezuela</span>
                         <span class="fecha">Caracas, Venezuela</span>
-                        <a href="http://www.ucv.ve/organizacion/facultades/facultad-de-ingenieria/escuelas/mecanica/bienvenida.html">
-                            Click here
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                        <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                                        <path d="M11 13l9 -9" />
-                                        <path d="M15 4h5v5" />
-                                    </svg>
+                        <a href="https://drive.google.com/file/d/1_j7f-LxCohiPJ71kYbswEQHdIUipSjdh/view?usp=drive_link">
+                            Click aquí para ver título
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
+                        </a>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <h3>Proyectos</h3>
+                    <div class="item izq">
+                        <!-- Brain Manager Proyecto -->
+                        <h4>Brain Manager 🧠🎧⏳</h4>
+                        <span class="casa">4Geeks Academy Proyecto Final</span>
+                        <span class="fecha">October – November 2023<br> |
+                            Santiago, Chile</span>
+                        <ul>
+                            Desarrollo de aplicación web fullstack para gestión del tiempo con Pomodoro Timer y música
+                            con ondas binaurales
+                            <li>
+                                UI prototipada en Illustrator con vistas clave.
+                            </li>
+                            <li>
+                                Responsive design con HTML5, CSS y Bootstrap.
+                            </li>
+                            <li>
+                                Temporizador Pomodoro en JavaScript con audio binaural.
+                            </li>
+                            <li>
+                                Flask + JWT para autenticación segura.
+                            </li>
+                            <li>
+                                Base de datos SQLAlchemy con métricas en un dashboard interactivo.
+                            </li>
+                        </ul>
+                        <a href="https://github.com/JonPobDum/4Geeks_final_front" target="_blank">Click Here to see the
+                            Frontend
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
+                        </a>
+                        <br>
+                        <a href="../Trabajo_final_4Geeks_Mock .jpg" target="_blank">Click Here to see the Mock
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
+                                width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                                <path d="M11 13l9 -9" />
+                                <path d="M15 4h5v5" />
+                            </svg>
                         </a>
                         <div class="conectori">
                             <div class="circuloi"></div>
@@ -311,55 +451,119 @@
                 </div>
 
                 <div class="col derecha">
-                    <h3>Proyectos</h3>
-                    <div class="item der">
-                        <h4>Brain Manager</h4>
-                        <span class="casa">4Geeks Academy Proyecto Final</span>
-                        <span class="fecha">October – November 2023<br> | 
-                            Santiago, Chile</span>
-                        <p>Desarrollo de una página web responsiva con Javascript, React, Python, Flask, SQLAlchemy y Rest API. La funcionalidad es la gestión del tiempo con temporizador Pomodoro y sonidos binaurales para influir en la productividad. La plataforma registra la duración de ciclos concentración/descanzo y estados de ánimo, presentándolos visualmente en un Dashboard. Se utiliza Git, Github, y metodologías ágiles como Scrum. HTML, CSS y Bootstrap se emplean para el diseño.</p>
-                        <a href="https://github.com/JonPobDum/4Geeks_final_front" target="_blank">Click Here to see the Frontend
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                                <path d="M11 13l9 -9" />
-                                <path d="M15 4h5v5" />
-                            </svg>
-                        </a>
-                        <br>
-                        <a href="../Trabajo_final_4Geeks_Mock .jpg" target="_blank">Click Here to see the Mock
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                                <path d="M11 13l9 -9" />
-                                <path d="M15 4h5v5" />
-                            </svg>
-                        </a>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
+                    <!-- Experiencia Profesional -->
                     <h3>Experiencia Profesional</h3>
+
+                    <!-- No-Country Start -->
                     <div class="item der">
-                        <h4>Asesor Técnico Comercial para Chile</h4>
-                        <span class="casa">Lone Star Thermal Engineering - LSPHE(US), Inc.</span>
-                        <span class="fecha">February 2021 – December 2022 <br> | 
+                        <h4>Desarrollador Frontend</h4>
+                        <span class="casa">No-Country</span>
+                        <span class="fecha">Noviembre 2024 – Diciembre 2024 <br> |
                             Santiago, Chile</span>
-                        <p>Interpretación y creación de contenido técnico para el mercado latinoamericano. Mantener y aumentar cartera. Generación de ofertas técnico - económicas. Cierre de Negocios, EPC desmontaje, montaje, instalación mantenimiento correctivo y mayor de intercambiadores de calor y sistemas térmicos.</p>
+                        <ul>
+                            Padel Time - Sistema de Reservación de Canchas de Pádel 🏓
+                            <li>
+                                React + MUI para una UI dinámica e intuitiva.
+                            </li>
+                            <li>
+                                ScrollDown Library para navegación fluida.
+                            </li>
+                            <li>
+                                Dashboard con MUI para monitoreo en tiempo real.
+                            </li>
+                            <li>
+                                JSX estructurado para mejor rendimiento y mantenimiento.
+                            </li>
+                        </ul>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
+                    <!-- No-Country End -->
+
+                    <!-- Limpiafosas Start-->
                     <div class="item der">
-                        <h4>Ingeniero de Proyectos,</h4>
-                        <span class="casa">INGEVENT</span>
-                        <span class="fecha">September 2019 – June 2021<br>
+                        <h4>Desarrollador FullStack</h4>
+                        <span class="casa">Limpiafosas Express ♻️</span>
+                        <span class="fecha">Octubre 2024 – Noviembre 2024<br>
                             | Santiago, Chile</span>
-                        <p>Experto en EPC para ventilación industrial y HVAC, abarcando presupuestos, soluciones para control de finos, neutralización de líquidos corrosivos, climatización, cámaras presurizadas y overhaul de equipos rotativos. </p>
+                        <ul>
+                            Portal Web
+                            <li>
+                                React + SASS para una UI atractiva y modular.
+                            </li>
+                            <li>
+                                Sistema de contacto vía correo con PHP.
+                            </li>
+                            <li>
+                                Optimización de imágenes con CDN y hosting.
+                            </li>
+                            <li>
+                                Pruebas de QA para validar vistas clave.
+                            </li>
+                        </ul>
                         <div class="conectord">
                             <div class="circulod"></div>
                         </div>
                     </div>
+                    <!-- Limpiafosas End-->
+
+                    <!-- ELevadores Diamante Start-->
+                    <div class="item der">
+                        <h4>Desarrollador FullStack</h4>
+                        <span class="casa">Elevadores Diamante 🏗️</span>
+                        <span class="fecha">Agosto 2024 – Septiembre 2024<br>
+                            | Santiago, Chile</span>
+                        <ul>
+                            Portal Web
+                            <li>
+                                React + SASS para una UI atractiva y modular.
+                            </li>
+                            <li>
+                                Sistema de contacto vía correo con PHP.
+                            </li>
+                            <li>
+                                Optimización de imágenes con CDN y hosting.
+                            </li>
+                            <li>
+                                Pruebas de QA para validar vistas clave.
+                            </li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- ELevadores Diamante End-->
+
+                    <!-- AutoCarehub Start-->
+                    <div class="item der">
+                        <h4>Desarrollador FullStack</h4>
+                        <span class="casa">AutoCarehub 🚗</span>
+                        <span class="fecha">Octubre 2024 – Noviembre 2024<br>
+                            | Santiago, Chile</span>
+                        <ul>
+                            Portal Web
+                            <li>
+                                Bootstrap + SASS para una UI responsiva e intuitiva.
+                            </li>
+                            <li>
+                                Integración con WhatsApp usando jQuery y PHP.
+                            </li>
+                            <li>
+                                Automatización de mensajes a correo con PHP.
+                            </li>
+                            <li>
+                                Optimización de imágenes con CDN y hosting.
+                            </li>
+                            <li>
+                                Gestión eficiente del estado con Redux.
+                            </li>
+                        </ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <!-- AutoCarehub End-->
                 </div>
             </div>
         </div>
@@ -368,88 +572,254 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>PORTAFOLIO</h2>
             <div class="galeria">
-                <!-- 1st Card Netflix - Fallout-->
+                <!-- 1st Card Auto Carehub - Fallout-->
                 <div class="proyecto">
-                    <img src="../netflix_fallout.PNG" alt="netflix_trailer_repository">
+                    <img src="/img/thumbnail/AutoCarehub_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
                     <div class="overlay">
-                        <h3><a href="https://github.com/RDLuisL/Netflix_trailer.git" target="_blank" style="text-decoration: none; color: white;">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://www.autocarehub.cl" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p></a>
                     </div>
-                </div>  <!--End Card-->
+                </div>
+                <!--End Card-->
 
-                <!-- 2nd Card Restaurant-->
+                <!-- 2st Card - Lifoex-->
                 <div class="proyecto">
-                    <img src="../Restaurante_Landpage.PNG" alt="restorant_landpage_repository">
+                    <img src="/img/thumbnail/lifoex_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-restaurantlandi-6rr8ppvgwu8.ws-us110.gitpod.io/" target="_blank"></a>Click</h3>
-                        <p>Here</p>
-                    </div> 
+                        <h3><a href="https://lifoex.cl" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 3st Card - Elevadores Diamante -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/diamante_thumbnail.JPG" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://elevadoresdiamante.cl" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p>
+                        </a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 4rd Card - Auto Square -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/Autosquare_home.webp" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://www.figma.com/proto/y7To3JulcYF0EDgPKwecJx/AutoSquare.Store?node-id=452-7274&t=vLIPlxhL0l2xYxuM-1"
+                                target="_blank" style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p>
+                        <p>UX/UI y Maqueta Figma</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 5th Card - NFC Register Project -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/Proyecto_NFC.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="#" target="_blank" style="text-decoration: none; color: white;">Proyecto
+                                Personal</h3>
+                        <p>En progreso - Fullstack</p>
+                        <svg fill="#1CB698FF" viewBox="0 0 40 4" xmlns="http://www.w3.org/2000/svg">
+                            <style>
+                                .react {
+                                    animation: moving 2s ease-in-out infinite;
+
+                                }
+
+                                @keyframes moving {
+                                    0% {
+                                        width: 0%;
+                                    }
+
+                                    50% {
+                                        width: 100%;
+                                        transform: translate(0%, 0);
+                                    }
+
+                                    100% {
+                                        width: 0;
+                                        right: 0;
+                                        transform: translate(100%, 0);
+                                    }
+                                }
+                            </style>
+                            <rect class="react" width="20" height="1" fill="currentColor" />
+                        </svg></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 6th Card - Brain Manager -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/final_project_brain _manager.jpg" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="#" target="_blank" style="text-decoration: none; color: white;">
+                                Proyecto Final -4Geeks</h3>
+                        <p>Brain Manager</p>
+                        <p>Cliquea aquí</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 7th Card - Hotel Guide -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/hotel_guide_thumbnail.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://hotel-guide-eosin.vercel.app/" target="_blank"
+                                style="text-decoration: none; color: white;">
+                                Cliquea</h3>
+                        <p>Aquí</p>
+                        <p>Pre-producción</p></a>
+                    </div>
+                </div>
+                <!--End Card-->
+
+                <!-- 7st Card - Parrillados Express -->
+                <div class="proyecto">
+                    <img src="/img/thumbnail/parrillada_express_QR.png" style="border-radius: 10px;"
+                        alt="netflix_trailer_repository">
+                    <div class="overlay">
+                        <h3><a href="https://parrilladas-chi.vercel.app/" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p>
+                        <p>Pre - Producción</p></a>
+                    </div>
                 </div> <!--End Card-->
 
-                <!-- 3rd Card Keyboard-->
+                <!-- 8nd Card Music Player-->
                 <div class="proyecto">
-                    <img src="../virtual_keyboard.PNG" alt="virtual_keyboard_repository">
+                    <img src="/img/thumbnail/music_player.png" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
                     <div class="overlay">
-                        <h3><a href="https://3000-rdluisl-virtualkeyword-2wvxsuv54dp.ws-us110.gitpod.io/" target="_blank"></a>Click</h3>
-                        <p>Here</p>
+                        <h3><a href="https://music-player-xi-green.vercel.app/" target="_blank">Proyecto Personal
+                        </h3>
+                        <p>Cliquea</p>
+                        <p>Aquí</p>
+                        </a>
                     </div>
                 </div> <!--End Card-->
 
-                <!-- 4rd Card Polygonal Earth-->
+                <!-- 10nd Card Elevadores Diamante The Game -->
                 <div class="proyecto">
-                    <img src="../Polygonal_Earth.PNG" alt="Polygonal_Earth">
+                    <img src="/img/thumbnail/the_game_elev-diam_thumbnail.png" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-polygonalearth-82csqr6o5ux.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://elev-diamant-the-game.vercel.app/" target="_blank">Proyecto Video Juego
+                        </h3>
+                        <p>Cliquea</p>
+                        <p>Aqui</p>
+                        </a>
                     </div>
                 </div> <!--End Card-->
 
-                <!-- 5ft Card Fortune Wheel-->
+                <!-- 8nd Card E-Commerce Runners-->
                 <div class="proyecto">
-                    <img src="../Fortune_wheel.PNG" alt="fortune_wheel">
+                    <img src="/img/thumbnail/e-commerce_runners-thumbnails.JPG" style="border-radius: 10px;"
+                        alt="restorant_landpage_repository">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-fortunespinwhee-jg0xtm6t81l.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
-                    </div>
-                </div>  <!--End Card-->
-
-                <!-- 6th Progress Circular Bar-->
-                <div class="proyecto">
-                    <img src="../Progress_circular_bar.PNG" alt="progress_circular_bar">
-                    <div class="overlay">
-                        <h3><a href="https://rdluisl-circularbarprog-hj6wt0rs6tj.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://e-commerse-runners.vercel.app/" target="_blank">Proyecto Personal
+                        </h3>
+                        <p>Cliquea</p>
+                        <p>Aquí</p>
+                        </a>
                     </div>
                 </div> <!--End Card-->
 
-                <!-- 7th Progress Circular Bar-->
+                <!-- 7st Card - Netflix -->
                 <div class="proyecto">
-                    <img src="../SW_cards.PNG" alt="star_wars_cards">
+                    <img src="/img/netflix_fallout.PNG" style="border-radius: 10px;" alt="netflix_trailer_repository">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-animatedcardscs-wgjbk5uc59u.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://github.com/RDLuisL/Netflix_trailer.git" target="_blank"
+                                style="text-decoration: none; color: white;">Cliquea</h3>
+                        <p>Aquí</p></a>
                     </div>
                 </div> <!--End Card-->
 
-                <!-- 8th Ball Bouncing on rope-->
+                <!-- 9rd Card Keyboard-->
                 <div class="proyecto">
-                    <img src="../ball_bouncing_rope.PNG" alt="elastic_efects">
+                    <img src="/img/virtual_keyboard.PNG" style="border-radius: 10px;" alt="virtual_keyboard_repository">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-elasticeffects-acne8m1yp4d.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://3000-rdluisl-virtualkeyword-2wvxsuv54dp.ws-us110.gitpod.io/"
+                                target="_blank">Click</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 10rd Card Polygonal Earth-->
+                <div class="proyecto">
+                    <img src="/img/Polygonal_Earth.PNG" style="border-radius: 10px;" alt="Polygonal_Earth">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-polygonalearth-82csqr6o5ux.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 11ft Card Fortune Wheel-->
+                <div class="proyecto">
+                    <img src="/img/Fortune_wheel.PNG" style="border-radius: 10px;" alt="fortune_wheel">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-fortunespinwhee-jg0xtm6t81l.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 12th Progress Circular Bar-->
+                <div class="proyecto">
+                    <img src="/img/Progress_circular_bar.PNG" style="border-radius: 10px;" alt="progress_circular_bar">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-circularbarprog-hj6wt0rs6tj.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!-- 13th Progress Circular Bar-->
+                <div class="proyecto">
+                    <img src="/img/SW_cards.PNG" style="border-radius: 10px;" style="border-radius: 10px;"
+                        alt="star_wars_cards">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-animatedcardscs-wgjbk5uc59u.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
+                    </div>
+                </div> <!--End Card-->
+
+                <!--14th Ball Bouncing on rope-->
+                <div class="proyecto">
+                    <img src="/img/ball_bouncing_rope.PNG" style="border-radius: 10px;" alt="elastic_efects">
+                    <div class="overlay">
+                        <h3><a href="https://rdluisl-elasticeffects-acne8m1yp4d.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
                     </div>
                 </div>
 
+                <!--15th Ball Bouncing on rope-->
                 <div class="proyecto">
-                    <img src="../product-gallery.PNG" alt="bouncing_ball_on_rope">
+                    <img src="/img/product-gallery.PNG" style="border-radius: 10px;" alt="bouncing_ball_on_rope">
                     <div class="overlay">
-                        <h3><a href="https://rdluisl-productgalery-wrbrgsverc2.ws-us110.gitpod.io/" target="_blank">Click</a></h3>
-                        <p>Here</p>
+                        <h3><a href="https://rdluisl-productgalery-wrbrgsverc2.ws-us110.gitpod.io/"
+                                target="_blank">Cliquea</h3>
+                        <p>Aquí</p></a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -467,26 +837,26 @@
                     <input type="text" placeholder="Tema">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        Enviar <i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
                 </div>
                 <!-- Mapa -->
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
+                <div class="col margin-box-info-contact">
+                    <img src="/img/img/ubicacion.png" alt="">
                     <div class="info">
                         <ul>
                             <li>
                                 <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
+                                Santiago de Chile, RM
                             </li>
                             <li>
                                 <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
+                                +56 944887031
                             </li>
                             <li>
                                 <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
+                                Correo Electrónico: contact@luislunatech.com
                             </li>
                         </ul>
                     </div>
@@ -497,18 +867,25 @@
 
     <!-- footer -->
     <footer>
+        <h3>Versión 1.0</h3>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-skype"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-solid fa-rss"></i></a>
-        </div>
+            <a href="https://slack.com/team/U0383P2JYF7"><i class="fa-brands fa-slack"></i></a>
+            <a href="https://github.com/RDLuisL" target="blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/devengluisluna" target="blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?text=Visita%20mi%20sitio%20web:%20https://luislunatech.com"
+                target="_blank">
+                <i class="fa-brands fa-whatsapp"></i></a>
+        </div>por:
+        <a href="http://luislunatech.com"><img src="/img/lluna_sign_white.png" class="" style="width: 150px;">
+            </img></a>
     </footer>
 
-    <script src="../app.js"></script>
+    <script src="/js/download.js"></script>
+    <script src="/js/app.js"></script>
 </body>
+
 </html>
